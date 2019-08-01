@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+        <!-- Metadatos Web -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <!-- HTML Meta Tags -->
+        <title>Plantilla</title>
+        <meta name="description" content="">
+
+        <!-- Google / Search Engine Tags -->
+        <meta itemprop="name" content="">
+        <meta itemprop="description" content="">
+        <meta itemprop="image" content="http://">
+
+        <!-- Facebook Meta Tags -->
+        <meta property="og:url" content="http://">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="">
+        <meta property="og:description" content="">
+        <meta property="og:image" content="http://">
+
+        <!-- Twitter Meta Tags -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="SEAT">
+        <meta name="twitter:description" content="">
+        <meta name="twitter:image" content="http://">
+
+
+        <!-- FontAwesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+                integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+                crossorigin="anonymous">
+
+        <!-- Nuestro CSS Compilado -->
+        <link rel="stylesheet" href="css/estilos.css">
+
+
+</head>
+
+<body>
+        <header>
+                <nav class="menu">
+                        <a href="#" class="menu__logo">LOGO</a>
+                        <input class="menu__input" id=activar type='checkbox'>
+                        <!-- En CSS hay que ponerle display:none -->
+                        <label class='menu__inputlabel' for='activar'>
+                                <!-- Esta unido al chechkbox a través del for que tiene que tener el nombre del id del input  -->
+
+                                <img src="assets/svg/menu icon.svg" alt="" class='menu__icono fas fa-bars'></i>
+                                <!-- Zona del icono. s donde haré click para que el menu se despliegue. Hay uno puesto.  -->
+                        </label>
+                        <ul class='menu__desplegable'>
+                                <!-- En CSS hay que ponerle display:none. Es lo que contiene el menu en si. Para que se abra en el CSS hay que ponerle que cuando apretemos en label, se convierta en display: block; -->
+                                <li class='menu__desplegable__op1'>
+                                        <a href='#'>HOME</a>
+                                </li>
+                                <li class='menu__desplegable__op2'>
+                                        <a href='#'>DISCOVERY</a>
+                                </li>
+                                <li class='menu__desplegable__op3'>
+                                        <a href='#'>PHOTOS</a>
+                                </li>
+                                <li class='menu__desplegable__op3'>
+                                        <a href='#'>CONTACT</a>
+                                </li>
+
+                        </ul>
+                        <picture class='menu__foto'>
+                                <!-- para moviles -->
+                                <source srcset='assets/img/smartphone/@1x/avatar.png 1x, assets/img/smartphone/@2x/avatar@2x.png 2x, assets/img/smartphone/@3x/avatar@3x.png 3x'
+                                        media='(min-width:0px) and (max-width:767px)'>
+
+                                <!-- Para Tablets. -->
+                                <source srcset='assets/img/tablet/@1x/morena.png 1x, assets/img/tablet/@2x/morena@2x.png 2x, assets/img/tablet/@3x/morena@3x.png 3x'
+                                        media='(min-width:768px) and(max-width:1199px)'>
+
+                                <!-- Para escritorio-->
+                                <source srcset='assets/img/desktop/@1/morena.png 1x, assets/img/desktop/@2x/morena@2x.png 2x'
+                                        media='(min-width:1200px)'>
+                                <!-- Imagen de respaldo. -->
+                                <img src='assets/img/smartphone/@1x/avatar.png' alt=''>
+                        </picture>
+                </nav>
+        </header>
+        <main class="montanya">
+                <div class="montanya__fondo">
+                        <h2>WORLD NEWS</h2>
+                        <h4>Amazing places in America to visit.</h4>
+                        <p>For some reason - this country, this city, this neighborhood, this particular street - is the
+                                place you are living a majority of your life in.</p>
+                        <a href="#">LEARN MORE</a>
+                </div>
+
+
+                <div class="montanya__titulo">
+                        <h2 class="montanya__titulo__titulo">MORE NEWS</h2>
+                        <a class="montanya__titulo__a1" href="#">
+                                < </a> <a class="montanya__titulo__a2" href="#"> >
+                        </a>
+                </div>
+                <ul class="montanya__parrafos">
+                        <li class="montanya__parrafos__1">
+                                <h3>TRAVEL</h3>
+                                <h4>Subtitle</h4>
+                                <P>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est soluta cupiditate sed
+                                        fuga pariatur necessitatibus!</P>
+                                <span><i class="far fa-clock"> 2m ago</i></span>
+                        </li>
+                        <li class="montanya__parrafos__2">
+                                <h3>TECHNOLOGY</h3>
+                                <h4>Subtitle</h4>
+                                <P>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est soluta cupiditate
+                                        sedfuga pariatur necessitatibus!</P>
+                                <span><i class="far fa-clock"> 1h ago</i></span>
+                        </li>
+                </ul>
+        </main>
+
+
+</body>
+
+</html>

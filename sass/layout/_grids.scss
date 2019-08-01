@@ -1,0 +1,110 @@
+// *****************************
+// +++++++ $GRIDS ++++++
+// *****************************
+
+
+.menu {
+    height: 50px;
+    width: 100%;
+    display: grid;
+    grid-template-areas: "margen menu logo foto margen2";
+    grid-template-rows: 1fr;
+    grid-template-columns: 10px 1fr 1fr 1fr 10px;
+    background-color: #F6F8F9;
+    align-items: center;
+
+    &__logo {
+        grid-area: logo;
+        justify-self: center;
+        color: #A6ADB4;
+
+        font-family: 'HelveticaNeueBold';
+    }
+
+    &__foto {
+        grid-area: foto;
+        justify-self: end;
+    }
+
+    &__inputlabel {
+        grid-area: menu;
+    }
+
+
+
+    #activar {
+        display: none;
+    }
+
+    &__desplegable {
+        display: none;
+
+
+
+    }
+
+    #activar:checked~.menu__desplegable {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        position: absolute;
+        left: 10px;
+        top: 50px;
+        height: 100px;
+        width: 100%;
+        background-color: #F6F8F9;
+
+        & li {
+
+            & a {
+                color: #343638;
+                font-family: 'HelveticaNeueBold';
+
+            }
+        }
+
+    }
+
+    @media screen and (min-width: 768px) {
+        grid-template-areas: "margen logo menu foto margen2";
+        grid-template-rows: 1fr;
+        grid-template-columns: 25px 2fr 2fr 50px 25px;
+
+        &__logo {
+            grid-area: logo;
+            justify-self: flex-start;
+            color: #FA6980;
+            font-size: 0.9rem;
+        }
+
+        &__foto {
+            grid-area: foto;
+            justify-self: end;
+        }
+
+        &__inputlabel {
+            display: none;
+        }
+
+        &__desplegable {
+            grid-area: menu;
+            display: flex;
+            justify-content: space-between;
+
+            & li {
+
+                & a {
+                    color: #7e8185;
+                    font-size: 0.8rem;
+
+                    &:hover {
+                        color: #343638;
+                    }
+                }
+            }
+
+        }
+    }
+
+
+}

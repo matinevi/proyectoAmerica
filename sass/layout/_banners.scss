@@ -1,0 +1,180 @@
+// *****************************
+// +++++++ $BANNERS ++++++
+// *****************************
+.montanya {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    &__fondo {
+        background-image: url(../assets/img/smartphone/@1x/Image.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 400px;
+        width: 100%;
+        display: grid;
+        grid-template-rows: 25px 1fr 1fr 1fr 1fr 25px;
+        grid-template-columns: 25px 1fr 25px;
+
+        grid-template-areas:
+            ". . ."
+            ". titulo ."
+            ". subtitulo ."
+            ". parrafo ."
+            ". boton ."
+            ". . .";
+        justify-content: center;
+        align-items: center;
+
+        & h2 {
+            grid-area: titulo;
+            border-bottom: 2px #FFFFFF solid;
+            font-family: 'HelveticaNeueBold';
+            align-self: flex-start;
+            padding-bottom: 60px;
+            font-size: 1.5rem;
+            color: #FFFFFF;
+        }
+
+        & h4 {
+            grid-area: subtitulo;
+            font-family: 'HelveticaNeueBold';
+            font-size: 1.5rem;
+            color: #FFFFFF;
+        }
+
+        & p {
+            grid-area: parrafo;
+            color: #FFFFFF;
+            letter-spacing: 2px;
+
+            font-family: 'HelveticaNeueMedium';
+        }
+
+        & a {
+            grid-area: boton;
+            width: 161px;
+            height: 40px;
+            border-radius: 10px;
+            background-color: #FA6980;
+            padding: 15px 25px;
+            color: #FFFFFF;
+            font-size: 0.8rem;
+            text-align: center;
+            font-family: 'HelveticaNeueBold';
+
+        }
+    }
+
+}
+
+.montanya {
+    &__titulo {
+        display: grid;
+        grid-template-rows: 80px;
+        grid-template-columns: 1fr 20px 20px;
+        grid-template-areas: "titulo a1 a2";
+        width: 90%;
+        border-bottom: 1px #A6ADB4 solid;
+        height: 80px;
+        align-items: center;
+
+        &__titulo {
+            font-family: 'HelveticaNeueBold';
+            font-size: 1.4rem;
+            grid-area: titulo;
+            justify-self: flex-start;
+
+        }
+
+        &__a1 {
+            grid-area: a1;
+        }
+
+        &__a2 {
+            grid-area: a2;
+        }
+
+        & a {
+            font-size: 1.4rem;
+            font-weight: 600;
+            letter-spacing: 5px;
+            color: black;
+
+        }
+    }
+}
+
+.montanya {
+    &__parrafos {
+        width: 100%;
+        display: grid;
+        height: 150px;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 25px 1fr 25px;
+        grid-template-areas: ". parrafo1 ."
+            ". parrafo2 .";
+
+        &__1 {
+            grid-area: parrafo1;
+
+            display: grid;
+            grid-template-rows: 25px 1fr 1fr 1fr 35px ;
+            grid-template-columns: 1fr;
+            grid-template-areas: "."
+                " titulo "
+                " subtitulo"
+                " parrafo "
+                " spa "
+            ;
+
+            align-items: center;
+
+        }
+
+        &__2 {
+            grid-area: parrafo2;
+
+            display: grid;
+            grid-template-rows: 25px 1fr 1fr 1fr 35px ;
+            grid-template-columns: 1fr;
+            grid-template-areas: "."
+                " titulo "
+                " subtitulo"
+                " parrafo "
+                " spa "
+            ;
+
+            display: grid;
+            align-items: center;
+
+
+        }
+
+        & h3 {
+            color: #FA6980;
+            font-family: 'HelveticaNeueBold';
+            grid-area: titulo;
+        }
+
+        & h4 {
+            color: black;
+            font-family: 'HelveticaNeueBold';
+            grid-area: subtitulo;
+        }
+
+        & p {
+            grid-area: parrafo;
+            color: #A6ADB4;
+            font-family: 'HelveticaNeueMedium';
+        }
+
+        & span {
+            grid-area: spa;
+            color: #A6ADB4;
+        }
+
+    }
+}
